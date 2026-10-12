@@ -1,0 +1,53 @@
+.collabpattern-sharing,
+.collabpattern-attachments,
+.collabpattern-inbox { width: 100%; min-width: 0; font-size: 14px; line-height: 20px; }
+.collabpattern-list-heading { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-top: 6px; }
+.collabpattern-list-heading strong { font-size: 16px; line-height: 24px; font-weight: 600; }
+.collabpattern-share-actions { align-items: flex-end; }
+.collabpattern-share-actions > :first-child { flex: 1; min-width: 140px; }
+.collabpattern-member { display: grid; grid-template-columns: 32px minmax(0, 1fr) minmax(104px, auto); align-items: center; gap: 12px; }
+.collabpattern-person,
+.collabpattern-file-text,
+.collabpattern-notice-content { display: flex; flex-direction: column; gap: 2px; min-width: 0; text-align: left; }
+.collabpattern-person strong,
+.collabpattern-file-text strong,
+.collabpattern-notice-content strong { color: var(--colorNeutralForeground1); font-size: 14px; line-height: 20px; font-weight: 600; overflow-wrap: anywhere; }
+.collabpattern-person span,
+.collabpattern-file-text span,
+.collabpattern-notice-content span { overflow-wrap: anywhere; }
+.collabpattern-member > :last-child { min-width: 0; }
+.collabpattern-member .fui-Dropdown { min-width: 100px; }
+.collabpattern-member .fui-Field__label { position: absolute; width: 1px; height: 1px; clip: rect(0,0,0,0); clip-path: inset(50%); overflow: hidden; white-space: nowrap; }
+.collabpattern-toolbar { align-items: center; }
+.collabpattern-attachment { display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
+.collabpattern-file-row { display: flex; align-items: center; gap: 8px; min-width: 0; }
+.collabpattern-file-row .fui-Checkbox { flex-shrink: 0; }
+.collabpattern-file-icon { flex: 0 0 auto; color: var(--colorBrandForeground1); width: 20px; height: 20px; }
+.collabpattern-file-text { flex: 1; }
+.collabpattern-file-row .shared-status-badge { flex-shrink: 0; }
+.collabpattern-file-actions { justify-content: flex-end; }
+.collabpattern-file-failure { color: var(--colorPaletteRedForeground1); margin: 0 0 0 44px; font-size: 14px; line-height: 20px; }
+.collabpattern-rename { display: flex; flex-direction: column; gap: 12px; padding: 8px 0 4px 44px; }
+.collabpattern-rename .fui-Input { width: 100%; min-width: 0; }
+.collabpattern-inbox-heading { justify-content: space-between; gap: 8px; align-items: center; }
+.collabpattern-inbox-heading .fui-TabList { padding: 0; }
+.collabpattern-notification { display: flex; flex-direction: column; align-items: stretch; gap: 8px; }
+.collabpattern-notification-top { display: flex; align-items: flex-start; gap: 8px; min-width: 0; }
+.collabpattern-notice-open.fui-Button { flex: 1; min-width: 0; text-align: left; padding: 4px 0; justify-content: flex-start; white-space: normal; }
+.collabpattern-notification-bottom { display: flex; align-items: center; justify-content: flex-end; flex-wrap: wrap; gap: 8px; }
+.collabpattern-notification-bottom > :first-child { margin-right: auto; }
+.collabpattern-notice-detail { border-top: 1px solid var(--colorNeutralStroke2); padding-top: 12px; }
+.collabpattern-notice-detail strong { font-size: 14px; line-height: 20px; font-weight: 600; }
+.collabpattern-notice-detail p { color: var(--colorNeutralForeground2); margin: 4px 0 0; font-size: 14px; line-height: 20px; max-width: 65ch; }
+.collabpattern-undo { align-self: flex-start; }
+@media (max-width: 540px) {
+  .collabpattern-member { grid-template-columns: 32px minmax(0, 1fr); }
+  .collabpattern-member > :last-child { grid-column: 2; width: 100%; }
+  .collabpattern-member .fui-Dropdown { width: 100%; }
+  .collabpattern-file-row { flex-wrap: wrap; }
+  .collabpattern-file-text { flex-basis: calc(100% - 72px); }
+  .collabpattern-file-row .shared-status-badge { margin-left: 44px; }
+  .collabpattern-share-actions > :first-child { flex-basis: 100%; }
+  .collabpattern-share-actions > .fui-Button { width: 100%; }
+  .collabpattern-inbox-heading { align-items: flex-start; }
+}

@@ -1,0 +1,326 @@
+.creationpattern-wizard,
+.creationpattern-records {
+  min-width: 0;
+  width: 100%;
+}
+
+.creationpattern-launch-summary {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.creationpattern-launch-summary strong,
+.creationpattern-created > strong,
+.creationpattern-records > .pattern-row > strong {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--fontWeightSemibold);
+}
+
+.creationpattern-launch-summary p,
+.creationpattern-created p,
+.creationpattern-save-status {
+  margin: 4px 0 0;
+}
+
+.creationpattern-launch-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 44px;
+  background: var(--colorBrandBackground2);
+  color: var(--colorBrandForeground1);
+  border-radius: var(--borderRadiusMedium);
+}
+
+.creationpattern-steps {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 12px;
+  margin: 0;
+  padding: 0;
+}
+
+.creationpattern-steps li {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--colorNeutralForeground2);
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: var(--fontWeightSemibold);
+  padding-bottom: 12px;
+  border-bottom: 2px solid var(--colorNeutralStroke2);
+}
+
+.creationpattern-steps li > span {
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  flex: 0 0 28px;
+  border-radius: var(--borderRadiusCircular);
+  background: var(--colorNeutralBackground3);
+}
+
+.creationpattern-steps li.is-current,
+.creationpattern-steps li.is-complete {
+  color: var(--colorBrandForeground1);
+  border-color: var(--colorBrandStroke1);
+}
+
+.creationpattern-steps li.is-current > span,
+.creationpattern-steps li.is-complete > span {
+  background: var(--colorBrandBackground2);
+}
+
+.creationpattern-launch-steps {
+  margin: 12px 0 4px;
+}
+
+.creationpattern-created {
+  border-top: 1px solid var(--colorNeutralStroke2);
+  padding-top: 16px;
+}
+
+.creationpattern-created .pattern-item > svg {
+  color: var(--colorBrandForeground1);
+  flex-shrink: 0;
+}
+
+.creationpattern-created .pattern-item > div,
+.creationpattern-record-item > div,
+.creationpattern-member-summary .pattern-item > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.creationpattern-wizard-dialog {
+  width: min(640px, calc(100vw - 32px));
+  max-width: 640px;
+  max-height: calc(100dvh - 24px);
+  overflow-y: auto;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.creationpattern-wizard-content {
+  display: grid;
+  gap: 24px;
+  padding-top: 16px;
+}
+
+.creationpattern-wizard-content p {
+  margin: 0;
+}
+
+.creationpattern-member-summary {
+  display: grid;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.creationpattern-validation {
+  color: var(--colorPaletteRedForeground1);
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.creationpattern-review {
+  padding: 20px;
+  background: var(--colorNeutralBackground2);
+  border: 1px solid var(--colorNeutralStroke2);
+  border-radius: var(--borderRadiusMedium);
+  overflow-wrap: anywhere;
+}
+
+.creationpattern-review h4,
+.creationpattern-editor-content h4 {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: var(--fontWeightSemibold);
+  margin: 0 0 8px;
+}
+
+.creationpattern-review dl {
+  display: grid;
+  gap: 16px;
+  margin: 20px 0 0;
+}
+
+.creationpattern-review dl > div {
+  display: grid;
+  grid-template-columns: 90px minmax(0, 1fr);
+  gap: 16px;
+}
+
+.creationpattern-review dt {
+  color: var(--colorNeutralForeground2);
+}
+
+.creationpattern-review dd {
+  margin: 0;
+  font-weight: var(--fontWeightSemibold);
+}
+
+.creationpattern-wizard-actions {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  width: 100%;
+  margin-top: 24px;
+}
+
+.creationpattern-record-item {
+  justify-content: space-between;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.creationpattern-record-item > .fui-Button {
+  flex-shrink: 0;
+}
+
+.creationpattern-record-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 4px;
+}
+
+.creationpattern-editor-drawer {
+  width: min(480px, 100vw);
+  max-width: 100vw;
+}
+
+.creationpattern-editor-drawer .fui-DrawerHeader {
+  padding: 24px 24px 12px;
+}
+
+.creationpattern-editor-drawer .fui-DrawerHeader p {
+  margin: 8px 0 0;
+  overflow-wrap: anywhere;
+}
+
+.creationpattern-editor-body {
+  padding: 0 24px 24px;
+}
+
+.creationpattern-editor-content {
+  padding-top: 24px;
+}
+
+.creationpattern-editor-content p {
+  margin: 0;
+}
+
+.creationpattern-editor-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  border-top: 1px solid var(--colorNeutralStroke2);
+  padding: 16px 24px;
+}
+
+.creationpattern-activity {
+  list-style: none;
+  display: grid;
+  gap: 0;
+  margin: 16px 0 0;
+  padding: 0;
+}
+
+.creationpattern-activity li {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+  padding: 16px 0;
+  border-bottom: 1px solid var(--colorNeutralStroke2);
+}
+
+.creationpattern-activity li > div {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+  overflow-wrap: anywhere;
+}
+
+.creationpattern-activity-marker {
+  display: block;
+  width: 8px;
+  height: 8px;
+  flex: 0 0 8px;
+  margin-top: 6px;
+  border-radius: var(--borderRadiusCircular);
+  background: var(--colorBrandForeground1);
+}
+
+@media (max-width: 767px) {
+  .creationpattern-wizard .fui-Button,
+  .creationpattern-records .fui-Button,
+  .creationpattern-wizard-dialog .fui-Button,
+  .creationpattern-editor-drawer .fui-Button {
+    min-height: 44px;
+    min-width: 44px;
+  }
+
+  .creationpattern-wizard-dialog .fui-Input,
+  .creationpattern-wizard-dialog .fui-Dropdown,
+  .creationpattern-editor-drawer .fui-Input,
+  .creationpattern-editor-drawer .fui-Dropdown {
+    min-height: 44px;
+  }
+
+  .creationpattern-wizard-dialog {
+    width: calc(100vw - 24px);
+    padding: 20px 16px;
+  }
+
+  .creationpattern-steps {
+    gap: 8px;
+  }
+
+  .creationpattern-steps li {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .creationpattern-wizard-actions,
+  .creationpattern-wizard-actions > .pattern-actions {
+    width: 100%;
+  }
+
+  .creationpattern-wizard-actions > .pattern-actions {
+    justify-content: flex-end;
+  }
+
+  .creationpattern-review {
+    padding: 16px;
+  }
+
+  .creationpattern-review dl > div {
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  .creationpattern-editor-drawer .fui-DrawerHeader {
+    padding: 20px 16px 12px;
+  }
+
+  .creationpattern-editor-body {
+    padding-inline: 16px;
+  }
+
+  .creationpattern-editor-footer {
+    padding-inline: 16px;
+  }
+}

@@ -1,0 +1,75 @@
+.official-stack { display: flex; flex-direction: column; gap: 12px; width: 100%; min-width: 0; align-self: stretch; color: var(--colorNeutralForeground1); font-size: 14px; line-height: 20px; }
+.official-stack p, .official-stack h4 { margin: 0; }
+.official-stack strong { font-weight: 600; }
+.official-stack .fui-Input, .official-stack .fui-Select { width: 100%; min-width: 0; }
+.official-muted { color: var(--colorNeutralForeground3); font-size: 14px; line-height: 20px; }
+.official-row { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.official-row-between { justify-content: space-between; }
+.official-row > svg { flex-shrink: 0; }
+.official-group-title { font-size: 16px; line-height: 24px; }
+.official-surface { max-width: min(340px, calc(100vw - 32px)); font-size: 14px; line-height: 20px; overflow-wrap: anywhere; }
+.official-surface p { margin: 0; }
+.official-surface .fui-AvatarGroupItem__overflowLabel { font-size: 14px; line-height: 20px; }
+.official-carousel { width: 100%; min-width: 0; }
+.official-carousel-card { display: flex; flex-direction: column; align-items: flex-start; gap: 12px; padding: 16px; border: 1px solid var(--colorNeutralStroke2); border-radius: 6px; background: var(--colorNeutralBackground1); min-height: 248px; overflow-wrap: anywhere; }
+.official-carousel-card > .fui-Button { margin-top: auto; }
+.official-carousel-controls { display: flex; justify-content: space-between; align-items: center; gap: 8px; margin-top: 12px; }
+.official-carousel-controls .fui-CarouselNav { display: flex; gap: 4px; }
+.official-color-picker { display: flex; flex-direction: column; gap: 12px; width: 100%; }
+.official-color-picker .fui-ColorArea { width: 100%; height: 160px; }
+.official-color-picker .fui-ColorSlider { width: 100%; }
+.official-color-sample { display: flex; align-items: center; gap: 12px; padding-top: 12px; border-top: 1px solid var(--colorNeutralStroke2); }
+.official-color-chip { width: 40px; height: 40px; flex: 0 0 40px; border: 1px solid var(--colorNeutralStroke1); border-radius: 6px; }
+.official-numeric { font-variant-numeric: tabular-nums; }
+.official-table-scroll { width: 100%; overflow-x: auto; scrollbar-color: var(--colorNeutralStroke1) var(--colorNeutralBackground2); border: 1px solid var(--colorNeutralStroke2); border-radius: 6px; }
+.official-data-grid { min-width: 560px; font-size: 14px; line-height: 20px; }
+.official-data-grid .fui-DataGridRow { min-height: 48px; }
+.official-data-grid .fui-DataGridCell { font-size: 14px; line-height: 20px; }
+.official-grid-name { font-weight: 600; }
+.official-facts { margin: 0; display: flex; flex-direction: column; gap: 12px; }
+.official-facts > div { display: flex; justify-content: space-between; gap: 16px; }
+.official-facts dt { color: var(--colorNeutralForeground3); }
+.official-facts dd { margin: 0; text-align: right; font-weight: 600; }
+.official-image-frame { width: 100%; height: 160px; border: 1px solid var(--colorNeutralStroke2); border-radius: 6px; overflow: hidden; background: var(--colorNeutralBackground2); }
+.official-image-frame .fui-Image { width: 100%; height: 100%; }
+.official-image-fallback { height: 100%; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 8px; text-align: center; padding: 12px; }
+.official-image-fallback > svg { width: 28px; height: 28px; color: var(--colorNeutralForeground3); }
+.official-field { display: flex; flex-direction: column; gap: 6px; }
+.official-result { display: flex; flex-direction: column; gap: 8px; padding-top: 12px; border-top: 1px solid var(--colorNeutralStroke2); overflow-wrap: anywhere; }
+.official-member-list { display: flex; flex-direction: column; padding: 0; margin: 0; }
+.official-member-list .fui-ListItem { display: flex; gap: 12px; align-items: center; min-height: 64px; padding: 12px 8px; border-bottom: 1px solid var(--colorNeutralStroke2); }
+.official-member-list .fui-ListItem:last-child { border-bottom: 0; }
+.official-member-list .fui-ListItem > div { min-width: 0; }
+.official-member-list .fui-ListItem p { overflow-wrap: anywhere; }
+.official-nav { width: 100%; max-width: 100%; }
+.official-nav .fui-NavItem, .official-nav .fui-NavSubItem, .official-nav .fui-NavCategoryItem { white-space: normal; overflow-wrap: anywhere; }
+.official-overflow { display: flex; gap: 8px; min-width: 0; overflow: hidden; position: relative; }
+.official-overflow > .fui-Button { flex: 0 0 auto; white-space: nowrap; }
+.official-portal-target { border: 1px dashed var(--colorNeutralStroke1); border-radius: 6px; padding: 16px; min-height: 120px; width: 100%; }
+.official-stack .fui-RatingDisplay__valueText, .official-stack .fui-RatingDisplay__countText { font-size: 14px; line-height: 20px; }
+.official-stack .fui-SwatchPicker { flex-wrap: wrap; }
+.official-teaching .fui-TeachingPopoverTitle { font-size: 20px; line-height: 28px; font-weight: 600; margin: 0 0 8px; }
+.official-teaching .fui-TeachingPopoverHeader { font-size: 16px; line-height: 24px; }
+.official-teaching .fui-TeachingPopoverFooter { flex-wrap: wrap; gap: 8px; }
+.official-text-heading { font-size: 16px; line-height: 24px; font-weight: 600; }
+@media (max-width: 767px) {
+  .official-stack .fui-Button, .official-stack .fui-Input, .official-stack .fui-Select,
+  .official-stack .fui-InfoLabel__infoButton, .official-stack .fui-Link,
+  .official-stack .fui-Switch, .official-stack .fui-CarouselButton,
+  .official-stack .fui-NavItem, .official-stack .fui-NavSubItem,
+  .official-stack .fui-NavCategoryItem, .official-surface .fui-Button,
+  .official-surface .fui-MenuItem, .official-avatar-trigger { min-height: 44px; }
+  .official-stack .fui-CarouselNavButton, .official-stack .fui-ColorSwatch,
+  .official-stack .fui-RatingItem, .official-stack .fui-InfoLabel__infoButton,
+  .official-avatar-trigger { min-width: 44px; min-height: 44px; }
+  .official-stack .fui-CarouselNavButton { width: 44px; height: 44px; }
+  .official-stack .fui-ColorSlider { min-height: 44px; }
+  .official-stack .fui-Rating { gap: 0; }
+  .official-carousel-card { padding: 12px; }
+  .official-carousel-controls { gap: 4px; }
+  .official-carousel-controls .fui-CarouselNav { gap: 0; }
+  .official-table-scroll .fui-DataGridSelectionCell { min-width: 44px; }
+  .official-stack .fui-Link { display: inline-flex; align-items: center; }
+  .official-surface .fui-TeachingPopoverHeader__dismissButton { width: 44px; height: 44px; }
+  .official-facts > div { flex-wrap: wrap; gap: 4px 12px; }
+}

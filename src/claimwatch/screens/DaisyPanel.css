@@ -1,0 +1,2 @@
+/* Layout and presentation are shared with the contextual assistant composition. */
+.cw-assistant-aside > .dashboard-assistant, .cw-daisy-drawer .dashboard-assistant { flex: 1; width: 100%; }

@@ -1,0 +1,18 @@
+.demo-stack .fui-Badge { align-self: flex-start; flex: 0 0 auto; }
+.demo-variant { display: flex; flex-direction: column; align-items: flex-start; gap: 8px; min-width: 0; }
+.demo-variant + .demo-variant { padding-top: 12px; border-top: 1px solid var(--colorNeutralStroke2); }
+.demo-variant > .demo-row { justify-content: flex-start; }
+.demo-variant > .demo-setting-row { width: 100%; }
+.demo-inline { display: inline-flex; align-items: center; gap: 8px; }
+.demo-self-start { align-self: flex-start; }
+.demo-button-family .fui-CompoundButton { white-space: normal; max-width: 100%; text-align: left; }
+.demo-button-family .fui-SplitButton { max-width: 100%; }
+.demo-avatar-sizes { display: flex; align-items: flex-end; justify-content: flex-start; gap: 28px; flex-wrap: wrap; }
+.demo-avatar-sizes > div { display: flex; flex-direction: column; align-items: center; gap: 8px; }
+.demo-card-preview { display: flex; flex-direction: column; gap: 12px; padding: 16px; background: var(--colorNeutralBackground2); }
+.demo-card-preview > div { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; }
+.foundation-table-scroll:focus-visible { outline: 2px solid var(--colorStrokeFocus2); outline-offset: 3px; }
+@media (max-width: 767px) {
+  .demo-button-family .fui-SplitButton .fui-Button, .demo-button-family .fui-SplitButton .fui-MenuButton { min-height: 44px; }
+  .demo-button-family .fui-SplitButton .fui-MenuButton { min-width: 44px; }
+}

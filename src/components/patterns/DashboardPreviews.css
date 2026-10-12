@@ -1,0 +1,5 @@
+.dashboard-composition-preview .dashboard-queue-summary dt { min-height: 40px; }
+.dashboard-composition-preview .pattern-detail-result { padding-top: 16px; margin-top: 16px; border-top: 1px solid var(--colorNeutralStroke2); }
+.dashboard-composition-preview .pattern-detail-result h4 { margin: 0 0 8px; font-size: 16px; line-height: 24px; }
+.dashboard-composition-preview .pattern-detail-result p { margin: 0 0 12px; font-size: 14px; line-height: 20px; }
+.dashboard-composition-preview .dashboard-preview-feedback { display: flex; align-items: center; justify-content: space-between; gap: 12px; flex-wrap: wrap; }

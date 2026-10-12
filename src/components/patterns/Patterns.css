@@ -1,0 +1,36 @@
+.pattern-stack { display: flex; flex-direction: column; gap: 16px; width: 100%; min-width: 0; font-size: 14px; line-height: 20px; }
+.pattern-row, .pattern-actions { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; }
+.pattern-actions { justify-content: flex-end; }
+.pattern-list { list-style: none; padding: 0; margin: 0; display: flex; flex-direction: column; }
+.pattern-item { display: flex; align-items: center; gap: 12px; padding: 12px 0; border-bottom: 1px solid var(--colorNeutralStroke2); min-width: 0; }
+.pattern-item:last-child { border-bottom: 0; }
+.pattern-item > div:not(.fui-Badge):not(.fui-Avatar):not(.fui-Checkbox) { min-width: 0; flex: 1; }
+.pattern-item > .fui-Badge { flex: 0 0 auto; }
+.pattern-item strong, .pattern-summary strong { font-size: 14px; line-height: 20px; font-weight: 600; }
+.pattern-muted { color: var(--colorNeutralForeground3); font-size: 14px; line-height: 20px; }
+.pattern-summary { padding: 16px; background: var(--colorNeutralBackground2); border-radius: 4px; display: flex; flex-direction: column; gap: 8px; }
+.pattern-empty { padding: 24px 12px; text-align: center; display: flex; flex-direction: column; align-items: center; gap: 12px; color: var(--colorNeutralForeground3); }
+.pattern-result { display: flex; flex-direction: column; gap: 6px; padding: 12px 0; border-top: 1px solid var(--colorNeutralStroke2); }
+.pattern-overlay { max-width: 640px; width: calc(100vw - 32px); font-size: 14px; line-height: 20px; }
+.pattern-stack p, .pattern-overlay p { margin: 0; }
+.pattern-stack .fui-Dropdown, .pattern-stack .fui-Input, .pattern-stack .fui-Combobox, .pattern-stack .fui-SearchBox, .pattern-stack .fui-TagPickerControl { min-width: 0; max-width: 100%; }
+.pattern-stack .fui-Field, .pattern-overlay .fui-Field { min-width: 0; }
+.pattern-stack .fui-TagPickerControl { flex-wrap: wrap; }
+.pattern-stack .fui-Tag { height: auto; min-height: 28px; max-width: 100%; }
+.pattern-stack .fui-Tag__primaryText { white-space: normal; overflow-wrap: anywhere; }
+.pattern-stack .fui-TagPickerInput { width: 150px; min-width: 80px; }
+.pattern-stack .fui-Button, .pattern-overlay .fui-Button { white-space: normal; }
+.pattern-stack .fui-Badge { min-height: 24px; height: auto; font-size: 14px; line-height: 20px; white-space: normal; }
+.pattern-stack .fui-ListItem { min-width: 0; }
+.pattern-stack .fui-Avatar__initials { font-size: 14px; }
+.pattern-options { max-width: calc(100vw - 24px); font-size: 14px; line-height: 20px; }
+.pattern-options .fui-Option, .pattern-options .fui-TagPickerOption { white-space: normal; overflow-wrap: anywhere; }
+@media (max-width: 767px) {
+  .pattern-overlay { padding: 20px; max-height: calc(100dvh - 24px); overflow-y: auto; }
+  .pattern-item { flex-wrap: wrap; }
+  .pattern-actions { justify-content: flex-start; }
+  .pattern-stack .fui-Button, .pattern-overlay .fui-Button, .pattern-overlay .fui-Dropdown, .pattern-stack .fui-Dropdown, .pattern-stack .fui-Tag__dismissIcon { min-height: 44px; }
+  .pattern-stack .fui-Input, .pattern-stack .fui-Combobox, .pattern-stack .fui-SearchBox, .pattern-stack .fui-TagPickerControl, .pattern-overlay .fui-Input, .pattern-overlay .fui-SearchBox { min-height: 44px; }
+  .pattern-stack .fui-TagPickerInput { min-height: 40px; }
+  .pattern-options .fui-Option, .pattern-options .fui-TagPickerOption { min-height: 44px; }
+}
